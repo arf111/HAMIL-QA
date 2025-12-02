@@ -201,7 +201,6 @@ class NormalizeAxialImages(MapTransform):
             else:  # Shape is (N, C, H, W)
                 normalized_images = []
                 for image in axial_images:  # image shape: (C, H, W)
-                    # Normalize all channels (original + IIR + optional difference map)
                     normalized_image = self.normalize_intensity(image)
                     normalized_images.append(normalized_image)
 
