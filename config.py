@@ -7,7 +7,7 @@ seed = 0
 n_patches = 60
 enlarge_xy = 30
 
-disable_comet = False
+disable_comet = True
 
 no_of_pseudo_bags = 6  # 18 is the lowest number of Axial slices in the dataset
 patch_size_2d = (32, 32)
