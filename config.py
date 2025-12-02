@@ -10,7 +10,7 @@ enlarge_xy = 30
 disable_comet = True
 
 no_of_pseudo_bags = 6  # 18 is the lowest number of Axial slices in the dataset
-patch_size_2d = (32, 32)
+patch_size_2d = (64, 64)
 
 def calculate_stride(patch_size, overlap_percentage):
     return tuple(int(size * (1 - overlap_percentage / 100)) for size in patch_size)
